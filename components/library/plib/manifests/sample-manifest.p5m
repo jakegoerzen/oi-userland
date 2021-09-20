@@ -1,0 +1,90 @@
+#
+# This file and its contents are supplied under the terms of the
+# Common Development and Distribution License ("CDDL"), version 1.0.
+# You may only use this file in accordance with the terms of version
+# 1.0 of the CDDL.
+#
+# A full copy of the text of the CDDL should have accompanied this
+# source.  A copy of the CDDL is also available via the Internet at
+# http://www.illumos.org/license/CDDL.
+#
+
+#
+# Copyright 2021 <contributor>
+#
+
+set name=pkg.fmri value=pkg:/$(COMPONENT_FMRI)@$(IPS_COMPONENT_VERSION),$(BUILD_VERSION)
+set name=pkg.summary value="$(COMPONENT_SUMMARY)"
+set name=info.classification value="$(COMPONENT_CLASSIFICATION)"
+set name=info.upstream-url value=$(COMPONENT_PROJECT_URL)
+set name=info.source-url value=$(COMPONENT_ARCHIVE_URL)
+set name=org.opensolaris.consolidation value=$(CONSOLIDATION)
+
+license $(COMPONENT_LICENSE_FILE) license='$(COMPONENT_LICENSE)'
+
+file path=usr/include/plib/fnt.h
+file path=usr/include/plib/js.h
+file path=usr/include/plib/net.h
+file path=usr/include/plib/netBuffer.h
+file path=usr/include/plib/netChannel.h
+file path=usr/include/plib/netChat.h
+file path=usr/include/plib/netMessage.h
+file path=usr/include/plib/netMonitor.h
+file path=usr/include/plib/netSocket.h
+file path=usr/include/plib/pcx.h
+file path=usr/include/plib/psl.h
+file path=usr/include/plib/pu.h
+file path=usr/include/plib/puAux.h
+file path=usr/include/plib/puAuxLocal.h
+file path=usr/include/plib/puFLTK.h
+file path=usr/include/plib/puGLUT.h
+file path=usr/include/plib/puNative.h
+file path=usr/include/plib/puPW.h
+file path=usr/include/plib/puSDL.h
+file path=usr/include/plib/pw.h
+file path=usr/include/plib/sg.h
+file path=usr/include/plib/sl.h
+file path=usr/include/plib/slPortability.h
+file path=usr/include/plib/sm.h
+file path=usr/include/plib/ssg.h
+file path=usr/include/plib/ssgAux.h
+file path=usr/include/plib/ssgKeyFlier.h
+file path=usr/include/plib/ssgMSFSPalette.h
+file path=usr/include/plib/ssgaBillboards.h
+file path=usr/include/plib/ssgaFire.h
+file path=usr/include/plib/ssgaLensFlare.h
+file path=usr/include/plib/ssgaParticleSystem.h
+file path=usr/include/plib/ssgaScreenDump.h
+file path=usr/include/plib/ssgaShapes.h
+file path=usr/include/plib/ssgaSky.h
+file path=usr/include/plib/ssgaSphere.h
+file path=usr/include/plib/ssgaWaveSystem.h
+file path=usr/include/plib/ssgconf.h
+file path=usr/include/plib/ul.h
+file path=usr/include/plib/ulRTTI.h
+file path=usr/lib/$(MACH64)/libplibfnt.a
+file path=usr/lib/$(MACH64)/libplibjs.a
+file path=usr/lib/$(MACH64)/libplibnet.a
+file path=usr/lib/$(MACH64)/libplibpsl.a
+file path=usr/lib/$(MACH64)/libplibpu.a
+file path=usr/lib/$(MACH64)/libplibpuaux.a
+file path=usr/lib/$(MACH64)/libplibpw.a
+file path=usr/lib/$(MACH64)/libplibsg.a
+file path=usr/lib/$(MACH64)/libplibsl.a
+file path=usr/lib/$(MACH64)/libplibsm.a
+file path=usr/lib/$(MACH64)/libplibssg.a
+file path=usr/lib/$(MACH64)/libplibssgaux.a
+file path=usr/lib/$(MACH64)/libplibul.a
+file path=usr/lib/libplibfnt.a
+file path=usr/lib/libplibjs.a
+file path=usr/lib/libplibnet.a
+file path=usr/lib/libplibpsl.a
+file path=usr/lib/libplibpu.a
+file path=usr/lib/libplibpuaux.a
+file path=usr/lib/libplibpw.a
+file path=usr/lib/libplibsg.a
+file path=usr/lib/libplibsl.a
+file path=usr/lib/libplibsm.a
+file path=usr/lib/libplibssg.a
+file path=usr/lib/libplibssgaux.a
+file path=usr/lib/libplibul.a
