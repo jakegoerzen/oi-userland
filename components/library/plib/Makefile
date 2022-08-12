@@ -11,7 +11,7 @@
 #
 # Copyright (c) 2021 Jake Goerzen
 
-BUILD_BITS=			32_and_64
+BUILD_BITS=		64
 
 include ../../../make-rules/shared-macros.mk
 
