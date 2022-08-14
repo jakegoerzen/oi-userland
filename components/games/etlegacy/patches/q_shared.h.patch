@@ -1,0 +1,13 @@
+--- etlegacy-2.80.2/src/qcommon/q_shared.h.orig	2022-08-13 21:38:31.079207864 +0000
++++ etlegacy-2.80.2/src/qcommon/q_shared.h	2022-08-13 21:40:05.988103514 +0000
+@@ -307,6 +307,10 @@
+ 
+ #endif // __linux__
+ 
++#ifdef __sun__
++#define CPUSTRING   "illumos-i386"
++#endif
++
+ //======================= OPENBSD DEFINES =================================
+ 
+ // the mac compiler can't handle >32k of locals, so we
